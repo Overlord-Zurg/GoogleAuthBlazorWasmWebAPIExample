@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35919.96 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAppAutoInd", "WebAppAutoInd\WebAppAutoInd.csproj", "{FD06FA4C-52CE-4C59-8FED-E011FC309C21}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAppAutoInd.Client", "WebAppAutoInd.Client\WebAppAutoInd.Client.csproj", "{CDD6C112-391E-4CB9-AB1F-94E9531E459D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FD06FA4C-52CE-4C59-8FED-E011FC309C21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD06FA4C-52CE-4C59-8FED-E011FC309C21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD06FA4C-52CE-4C59-8FED-E011FC309C21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD06FA4C-52CE-4C59-8FED-E011FC309C21}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CDD6C112-391E-4CB9-AB1F-94E9531E459D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDD6C112-391E-4CB9-AB1F-94E9531E459D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDD6C112-391E-4CB9-AB1F-94E9531E459D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDD6C112-391E-4CB9-AB1F-94E9531E459D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CF67B4DB-0501-40F2-9D68-58981ED7426B}
+	EndGlobalSection
+EndGlobal
