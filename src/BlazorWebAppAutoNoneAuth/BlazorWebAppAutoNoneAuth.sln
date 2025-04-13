@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35919.96 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorWebAppAutoNoneAuth", "BlazorWebAppAutoNoneAuth\BlazorWebAppAutoNoneAuth.csproj", "{67C282C6-8C5F-4B43-83DC-0DA3E34EA355}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorWebAppAutoNoneAuth.Client", "BlazorWebAppAutoNoneAuth.Client\BlazorWebAppAutoNoneAuth.Client.csproj", "{F908053A-7F05-489D-997C-428E85980050}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{67C282C6-8C5F-4B43-83DC-0DA3E34EA355}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67C282C6-8C5F-4B43-83DC-0DA3E34EA355}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67C282C6-8C5F-4B43-83DC-0DA3E34EA355}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67C282C6-8C5F-4B43-83DC-0DA3E34EA355}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F908053A-7F05-489D-997C-428E85980050}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F908053A-7F05-489D-997C-428E85980050}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F908053A-7F05-489D-997C-428E85980050}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F908053A-7F05-489D-997C-428E85980050}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5B76C2E9-5E46-4322-8C09-6FFDCAE2EBF9}
+	EndGlobalSection
+EndGlobal
