@@ -27,6 +27,8 @@ builder.Services.AddAuthentication(o =>
 {
     o.ClientId = googleClientID;
     o.ClientSecret = googleClientSecret;
+    o.CallbackPath = "/signin-oidc";
+    o.SignedOutRedirectUri = "/signout-callback-oidc";
 });
 
 // Add services to the container.
@@ -78,6 +80,7 @@ app.UseHttpsRedirection();
 
 app.UseAuthentication();
 app.UseAuthorization();
+app.UseCookiePolicy();
 
 app.UseAntiforgery();
 
