@@ -9,6 +9,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\BlazorWebAppAutoNoneAuth.Client\BlazorWebAppAutoNoneAuth.Client.csproj" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.Google" Version="9.0.4" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Server" Version="9.0.3" />
   </ItemGroup>
 
