@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using System.Security.Claims;
 
-namespace BlazorGmail.Pages.Identity
+namespace BlazorWebAppAutoNoneAuth.Pages
 {
     [AllowAnonymous]
     public class LoginModel : PageModel
@@ -26,13 +26,13 @@ namespace BlazorGmail.Pages.Identity
             string returnUrl = null, string remoteError = null)
         {
             // Get the information about the user from the external login provider
-            var GoogleUser = this.User.Identities.FirstOrDefault();
+            var GoogleUser = User.Identities.FirstOrDefault();
             if (GoogleUser.IsAuthenticated)
             {
                 var authProperties = new AuthenticationProperties
                 {
                     IsPersistent = true,
-                    RedirectUri = this.Request.Host.Value
+                    RedirectUri = Request.Host.Value
                 };
                 await HttpContext.SignInAsync(
                 CookieAuthenticationDefaults.AuthenticationScheme,
