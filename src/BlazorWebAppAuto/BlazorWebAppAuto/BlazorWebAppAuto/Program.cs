@@ -5,6 +5,8 @@ using BlazorWebAppAuto.Data;
 using Microsoft.AspNetCore.Components.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Google.Apis.Auth.AspNetCore3;
+using Microsoft.AspNetCore.Authentication.Cookies;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,6 +14,20 @@ var googleClientID =
     builder.Configuration["Authentication:Google:development-examples:ClientId"];
 var googleClientSecret =
     builder.Configuration["Authentication:Google:development-examples:ClientSecret"];
+
+// https://developers.google.com/api-client-library/dotnet/guide/aaa_oauth#configure-your-application-to-use-google.apis.auth.aspnetcore3
+builder.Services.AddAuthentication(o =>
+{
+    o.DefaultChallengeScheme = GoogleOpenIdConnectDefaults.AuthenticationScheme;
+    o.DefaultForbidScheme = GoogleOpenIdConnectDefaults.AuthenticationScheme;
+    o.DefaultScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+})
+.AddCookie()
+.AddGoogleOpenIdConnect(o =>
+{
+    o.ClientId = googleClientID;
+    o.ClientSecret = googleClientSecret;
+});
 
 // Add services to the container.
 builder.Services.AddRazorComponents()
@@ -60,6 +76,8 @@ else
 
 app.UseHttpsRedirection();
 
+app.UseAuthentication();
+app.UseAuthorization();
 
 app.UseAntiforgery();
 
