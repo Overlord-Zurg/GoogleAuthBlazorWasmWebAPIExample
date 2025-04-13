@@ -8,6 +8,11 @@ using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
+var googleClientID =
+    builder.Configuration["Authentication:Google:development-examples:ClientId"];
+var googleClientSecret =
+    builder.Configuration["Authentication:Google:development-examples:ClientSecret"];
+
 // Add services to the container.
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents()
